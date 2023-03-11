@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/assets/scss/style.scss">
+    <script src="/assets/js/script.js" async></script>
+</head>
+<body>
+  <div class="card">
+    <form class="card__form" autocomplete="nope">
+      <div class="card__form__header">
+        <h3 class="card__form__header__text">CREATE A NEW ACCOUNT</h3>
+        <input id="dark-mode" type="checkbox" class="card__form__header__dark-mode">
+      </div>
+      <div class="card__form__full-name">
+        <label for="full-name">Full Name</label>
+        <input id="full-name" type="text"  maxlength="64" autocomplete="nope">
+        <span id="full-name-control"></span>
+      </div>
+      <div class="card__form__email">
+        <label for="sign-up-email">Email</label>
+        <input id="sign-up-email" type="email" maxlength="320" autocomplete="nope">
+        <span id="email-control"></span>
+      </div>
+      <div class="card__form__phone">
+        <label for="phone">Phone</label>
+        <input id="phone" type="text" maxlength="11" autocomplete="nope">
+        <span id="phone-control"></span>
+      </div>
+      <div class="card__form__password">
+        <label for="sign-up-password">Password</label>
+        <input id="sign-up-password" type="password" maxlength="32" autocomplete="nope">
+        <span id="password-control"></span>
+      </div>
+      <div class="card__form__action">
+        <a type="button" id="create-account">CREATE</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
